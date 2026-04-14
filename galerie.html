@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Photographe Portrait | Bernay, Rouen, Caen - Klarat Création</title>
+    <meta name="description"
+        content="Découvrez ma galerie de portraits réalisés en extérieur et à domicile en Normandie. Séances photo à Bernay, Évreux et Deauville par Klarat Création.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.klarat-creation.fr/galerie.html">
+
+    <meta property="og:title" content="Galerie Portrait – Klarat Création | Photographe Normandie">
+    <meta property="og:description" content="Découvrez mon univers : des portraits authentiques capturés en Normandie.">
+    <meta property="og:image" content="https://www.klarat-creation.fr/og-image.jpg">
+    <meta property="og:url" content="https://www.klarat-creation.fr/galerie.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galerie Portrait – Klarat Création | Photographe Normandie">
+    <meta name="twitter:description"
+        content="Découvrez mon univers : des portraits authentiques capturés en Normandie.">
+    <meta name="twitter:image" content="https://www.klarat-creation.fr/og-image.jpg">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Portfolio Portrait Normandie – Klarat Création",
+      "description": "Galerie de photographies de portrait réalisées à Bernay, Rouen, Caen et Deauville par Clara.",
+      "author": {
+        "@type": "Person",
+        "name": "Clara"
+      },
+      "isPartOf": {
+        "@type": "LocalBusiness",
+        "name": "Klarat Création"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-pro {
+            column-count: 3;
+            column-gap: 8px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 900px) {
+            .gallery-pro {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .gallery-pro {
+                column-count: 1;
+            }
+        }
+
+        .gallery-pro-item {
+            break-inside: avoid;
+            margin-bottom: 8px;
+            position: relative;
+            overflow: hidden;
+            background: #f4f4f4;
+            display: block;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #181818;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery-pro-item:nth-child(odd) .gallery-placeholder {
+            height: 450px;
+        }
+
+        .gallery-pro-item:nth-child(even) .gallery-placeholder {
+            height: 320px;
+        }
+
+        .gallery-pro-item:nth-child(3n) .gallery-placeholder {
+            height: 550px;
+        }
+
+        .gallery-hover-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.7);
+            width: 46px;
+            height: 46px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: 2;
+        }
+
+        .gallery-pro-item:hover .gallery-hover-icon {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .gallery-pro-item:hover .gallery-placeholder {
+            opacity: 0.7;
+        }
+
+        .gallery-placeholder-label {
+            font-family: 'Avenir', sans-serif;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <header id="header">
+        <nav aria-label="Navigation principale">
+            <img src="Photo/logo.png" alt="Logo Klarat Création">
+
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galerie.html" class="active">Galerie</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <p class="hero-eyebrow">Portfolio</p>
+            <h1 class="reveal">Galerie <span>Portrait</span></h1>
+            <p class="reveal delay-1">Instants authentiques capturés en Normandie — entre lumière naturelle et studio
+                mobile.</p>
+        </div>
+    </section>
+
+    <section aria-label="Galerie photos de portrait en Normandie" style="padding: 0 6%;">
+        <div class="photo-gallery">
+            <img src="Photo/Miss petite universe haute normandie 2025.jpg" alt="Portrait MPU" loading="lazy">
+            <img src="Photo/1ère dauphine miss petite universe haute normandie 2025.jpg" alt="Portrait MPU" loading="lazy">
+            <img src="Photo/Duo Miss petite universe Haute Normandie 2025.jpg" alt="Portrait MPU" loading="lazy">
+            <img src="Photo/Duo Miss petite universe Haute Normandie 2025-2.jpg" alt="Portrait MPU" loading="lazy">
+            <img src="Photo/Élection miss petite universe haute normandie 2025-2.jpg" alt="Portrait MPU" loading="lazy">
+            <img src="Photo/Élection miss petite universe haute normandie 2025.jpg" alt="Portrait MPU" loading="lazy">
+            <img src="Photo/Laura-2.jpg" alt="Portrait Laura" loading="lazy">
+            <img src="Photo/Laura.jpg" alt="Portrait Laura" loading="lazy">
+            <img src="Photo/Elemiah.jpg" alt="Portrait Elemiah" loading="lazy">
+            <img src="Photo/Eléa.jpg" alt="Portrait Eléa" loading="lazy">
+            <img src="Photo/Dordogne.jpg" alt="Photo Dordogne" loading="lazy">
+            <img src="Photo/Marché Dordogne.jpg" alt="Photo Dordogne" loading="lazy">
+            <img src="Photo/American Sunday 2025.jpg" alt="American Sunday 2025" loading="lazy">
+            <img src="Photo/American sunday Brionne.jpg" alt="American Sunday 2025" loading="lazy">
+
+
+        </div>
+    </section>
+
+    <div class="cta-section" style="margin-top:80px;" aria-labelledby="galerie-cta">
+        <h2 id="galerie-cta" class="reveal">Vous vous imaginez ici ?</h2>
+        <p class="reveal delay-1">Réservez votre séance portrait pour ce weekend !</p>
+        <a href="contact.html" class="btn reveal delay-2" style="margin-top:2rem;"><span>Me contacter</span></a>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Klarat <span>Création</span></a>
+                <p class="footer-tagline">Photographe Portrait en Normandie.<br>Bernay · Évreux · Deauville · Rouen ·
+                    Caen.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <a href="galerie.html">Galerie</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="propos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <h4>Me contacter</h4>
+                <a href="mailto:klarat.creation@outlook.fr">klarat.creation@outlook.fr</a>
+                <a href="https://www.instagram.com/klarat.creation" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Klarat Création – Photographe portrait à Bernay, Évreux, Deauville, Rouen et Caen.</span>
+            <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

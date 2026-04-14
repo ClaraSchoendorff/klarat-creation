@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Réservation | Photographe Portrait Normandie - Klarat Création</title>
+    <meta name="description"
+        content="Réservez votre séance portrait avec Clara en Normandie. Contact rapide via formulaire, email ou Instagram. Séances le weekend à Bernay, Rouen, Évreux et Deauville.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.klarat-creation.fr/contact.html">
+
+    <meta property="og:title" content="Contact – Klarat Création | Photographe Portrait Normandie">
+    <meta property="og:description" content="Une question ? Un projet de séance ? Contactez Clara pour vos portraits en Normandie.">
+    <meta property="og:image" content="https://www.klarat-creation.fr/og-image.jpg">
+    <meta property="og:url" content="https://www.klarat-creation.fr/contact.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact – Klarat Création | Photographe Portrait Normandie">
+    <meta name="twitter:description" content="Une question ? Un projet de séance ? Contactez Clara pour vos portraits en Normandie.">
+    <meta name="twitter:image" content="https://www.klarat-creation.fr/og-image.jpg">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <header id="header">
+        <nav aria-label="Navigation principale">
+            <img src="Photo/logo.png" alt="Logo Klarat Création">
+
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <p class="hero-eyebrow">Parlons de votre projet</p>
+            <h1 class="reveal">On crée vos <span>images</span> ?</h1>
+            <p class="reveal delay-1">Une question ou une envie de séance portrait ? Je vous réponds avec plaisir sous 24h.</p>
+        </div>
+    </section>
+
+    <section style="padding: 80px 6%;">
+        <div class="contact-grid">
+
+            <div class="reveal-left">
+                <span class="eyebrow">Canaux directs</span>
+                <h2 class="contact-subtitle">Instagram ou <span>Email</span></h2>
+
+                <a href="https://www.instagram.com/klarat.creation" target="_blank" rel="noopener" class="contact-link contact-link--rose">
+                    <div>
+                        <p class="contact-link-label">Instagram</p>
+                        <p class="contact-link-value">@klarat.creation</p>
+                    </div>
+                </a>
+
+                <a href="mailto:klarat.creation@outlook.fr" class="contact-link contact-link--grey">
+                    <div>
+                        <p class="contact-link-label">Email Direct</p>
+                        <p class="contact-link-value">klarat.creation@outlook.fr</p>
+                    </div>
+                </a>
+
+                <div class="contact-infos">
+                    <div class="contact-info-item">
+                        <span class="contact-info-dot" aria-hidden="true">○</span>
+                        <div>
+                            <p class="contact-info-title">Zone d'activité</p>
+                            <p class="contact-info-text">Bernay, Rouen, Évreux, Deauville, Caen.<br>Toute la Normandie le weekend.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-dot" aria-hidden="true">○</span>
+                        <div>
+                            <p class="contact-info-title">Réservation</p>
+                            <p class="contact-info-text">Acompte de 50% pour bloquer la date.<br>Le reste le jour de la séance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-right">
+                <!--
+                    FORMULAIRE : remplacez YOUR_FORM_ID par votre identifiant Formspree.
+                    Créez un compte gratuit sur https://formspree.io puis créez un formulaire
+                    et copiez l'ID ici (ex: https://formspree.io/f/abcdefgh → ID = abcdefgh).
+                -->
+                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                    <!-- Champ anti-spam honeypot (Formspree l'ignore si rempli par un bot) -->
+                    <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off">
+                    <!-- Redirection après envoi -->
+                    <input type="hidden" name="_next" value="https://www.klarat-creation.fr/contact.html?sent=1">
+                    <input type="hidden" name="_subject" value="Nouvelle demande de séance – Klarat Création">
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required autocomplete="given-name"
+                                aria-describedby="prenom-error">
+                            <span class="field-error" id="prenom-error" role="alert" aria-live="polite"></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required autocomplete="family-name"
+                                aria-describedby="nom-error">
+                            <span class="field-error" id="nom-error" role="alert" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required autocomplete="email"
+                            aria-describedby="email-error">
+                        <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="prestation">Formule envisagée *</label>
+                        <select id="prestation" name="prestation" required aria-describedby="prestation-error">
+                            <option value="" disabled selected>Choisir...</option>
+                            <option value="mini">Séance Mini (50€)</option>
+                            <option value="classique">Séance Classique (80€)</option>
+                            <option value="autre">Autre projet portrait</option>
+                        </select>
+                        <span class="field-error" id="prestation-error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Votre projet *</label>
+                        <textarea id="message" name="message" rows="5" required
+                            aria-describedby="message-error"
+                            placeholder="Dites-m'en un peu plus sur vos envies..."></textarea>
+                        <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-full" id="submit-btn">
+                        <span id="submit-label">Envoyer ma demande</span>
+                    </button>
+
+                    <div id="form-success" class="form-success" hidden aria-live="polite">
+                        <p>✓ Message envoyé ! Je vous réponds sous 24h.</p>
+                    </div>
+                    <div id="form-error-global" class="form-error-global" hidden aria-live="polite">
+                        <p>Une erreur est survenue. Réessayez ou écrivez-moi directement par email.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo footer-logo">Klarat <span>Création</span></a>
+                <p class="footer-tagline">Photographe Portrait en Normandie.<br>Bernay · Évreux · Deauville · Rouen · Caen.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <a href="galerie.html">Galerie</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="propos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <h4>Me contacter</h4>
+                <a href="mailto:klarat.creation@outlook.fr">klarat.creation@outlook.fr</a>
+                <a href="https://www.instagram.com/klarat.creation" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Klarat Création – Photographe portrait en Normandie</span>
+            <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
